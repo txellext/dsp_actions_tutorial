@@ -20,3 +20,9 @@ jobs:
       run: pip install cowpy
     - name: use-cowpy
       run: cowpy -c tux 'hi there'
+  
+  call-python:
+    runs-on: ubuntu-latest
+    steps:
+    - name: read-script
+      run: python test_2.py 
