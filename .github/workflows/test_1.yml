@@ -24,8 +24,7 @@ jobs:
   call-python:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
     - name: check folder
       run: ls -l
     - name: read-script
