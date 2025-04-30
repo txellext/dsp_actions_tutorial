@@ -1,0 +1,22 @@
+# Test workshop GitHub Actions
+name: testing
+
+on:
+  push:
+
+jobs:
+  install-cowsay:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install-cowsay
+      run: pip install cowsay 
+    - name: use-cowsay
+      run: cowsay -c cheese -t 'hey there'
+
+  install-cowpy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install-cowpy
+      run: pip install cowpy
+    - name: use-cowpy
+      run: cowpy -c tux hi there
