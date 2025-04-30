@@ -24,5 +24,7 @@ jobs:
   call-python:
     runs-on: ubuntu-latest
     steps:
+    - name: check folder
+      run: ls -l
     - name: read-script
       run: python test_2.py 
